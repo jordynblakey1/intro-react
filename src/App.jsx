@@ -8,7 +8,8 @@ class App extends React.Component {
 
     this.state = {
       buttonClicked: "",
-      assignments: [] /*Below this line, add the students state variable*/,
+      assignments: [],
+      students: [],
       grades: {}
     };
 
@@ -42,7 +43,7 @@ class App extends React.Component {
       grades[assignmentName] = {};
     }
     grades[assignmentName][studentName] = score;
-    this.setState({ grades: grades });
+    this.gitsetState({ grades: grades });
   }
 
   render() {
